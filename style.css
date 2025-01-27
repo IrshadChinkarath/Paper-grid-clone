@@ -1,0 +1,179 @@
+/* Importing necessary external resources */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Header Styling */
+#header {
+  height: auto;
+  z-index: 10000;
+}
+#head-msg h5 {
+  font-size: 0.8rem;
+}
+
+/* Navbar Styling */
+#navbar {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.465);
+
+  z-index: 1000;
+}
+.nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.646) !important;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: white !important;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+/* User Section Styling */
+.user {
+  color: azure;
+}
+.user i {
+  color: azure !important;
+}
+
+/* Product Container Styling */
+.product-container {
+  height: auto;
+}
+
+/* Footer Styling */
+footer {
+  height: 40vh;
+}
+.footer-link {
+  font-size: 10px;
+}
+.footer-link ul li a {
+  padding: 0.1rem;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.688);
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-link .custom-list li a::before {
+  content: "• ";
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/* Contact Section Styling */
+.contact-container {
+  width: 100vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.516);
+}
+
+/* Background Image Styling */
+.p-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-btn {
+  width: 100px;
+}
+
+/* Side Navigation Styling */
+/* #collaps {
+  position: relative;
+} */
+.side-nav {
+  position: fixed;
+  width: 400px;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+  padding-top: 5rem;
+  background-color: black;
+  transition: left 0.3s ease;
+  height: 100vh;
+}
+.side-nav .link{
+  margin-top: 2rem;
+} 
+#side-menu-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  background-color: rgba(240, 255, 255, 0.107);
+  width: 100%;
+}
+#side-menu-bottom ul li {
+  list-style: none;
+  color: white;
+  font-size: 1.4rem;
+  margin: 2.5rem;
+}
+#btnClose {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  margin: 5rem;
+  margin-top: 2rem;
+}
+#btnNav {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+/* Keyframes for Slide Animation */
+@keyframes slideIn {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slideOut {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -400px;
+  }
+}
+.side-nav.open {
+  animation: slideIn 0.3s ease forwards;
+}
+.side-nav.close {
+  animation: slideOut 0.3s ease forwards;
+}
+
+/* Account Icon Styling */
+.account-icon ul li a {
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive Display Classes */
+/* @media (max-width: 576px) {
+  .d-sm-none {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
+} */
